@@ -4,7 +4,9 @@
   "description": "Extrage date firme (ANAF + Min. Finantelor) si le incarca in Microsoft Dynamics",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "check": "node --check src/index.js && node --check src/anaf.js && node --check src/bilant.js && node --check src/dynamics.js && node --check src/normalizare.js",
+    "test": "npm run check"
   },
   "engines": { "node": ">=18" }
 }
